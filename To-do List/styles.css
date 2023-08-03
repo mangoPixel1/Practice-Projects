@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    display: inline-block;
+    padding: 25px;
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#inputBox {
+    margin-top: 15px;
+    height: 2.7rem;
+    width: 73%;
+    padding: 0 8px;
+    font-size: 18px;
+}
+
+input::placeholder {
+    font-size: 18px;
+    
+}
+
+#addBtn {
+    padding: 10px;
+    font-size: 15px;
+}
+
+#clearBtn {
+    padding: 10px;
+    font-size: 15px;
+}
+
+ul {
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(239, 239, 239);
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.removeBtn {
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.removeBtn:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+.removeBtn:active {
+    background-color: rgb(209, 209, 209);
+}
